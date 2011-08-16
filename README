@@ -1,0 +1,9 @@
+Honey Pot Spam Protection Field
+===============================
+
+Add this field to any form to introduce spam protection. It is a css-hidden field, which will fail validation if filled out.
+
+
+To protect PageComments (SS 2.4+), simply add the following to your _config.php file:
+
+	Object::add_extension('PageCommentInterface', 'HoneyPotProtectComments');
