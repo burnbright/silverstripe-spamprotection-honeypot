@@ -7,3 +7,8 @@ Add this field to any form to introduce spam protection. It is a css-hidden fiel
 To protect PageComments (SS 2.4+), simply add the following to your _config.php file:
 
 	Object::add_extension('PageCommentInterface', 'HoneyPotProtectComments');
+	
+	
+## TODO
+
+ * Provide incorporation with spam protection module.
