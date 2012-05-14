@@ -21,19 +21,19 @@ class HoneyPotSpamProtectionField extends TextField{
 	}
 	
 	function Field(){
-
 		//display field after validation if it fails
 		if(!$this->messageType){
-			
 			$htmlid = $this->name;		
 			$css =<<<CSS
 				form div#$htmlid{
-					display:none;
+					margin:0;padding-left:1px;
+					height:1px;
+					width:0;
+					overflow:hidden;
 				}
 CSS;
 			Requirements::customCSS($css,$this->name);
 		}
-		
 		return parent::Field();
 	}
 	
