@@ -7,7 +7,7 @@
  * Simply add it to a form's fields to use.
  * 
  */
-class HoneyPotSpamProtectionField extends TextField{
+class HoneyPotSpamProtectionField extends SpamProtectorField{
 	
 	static $validatemembers = false;
 	
